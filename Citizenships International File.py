@@ -71,6 +71,14 @@ if init == "START":
                 DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCNABE0002.split(" ")])
                 print(DECRYPTED)
                 continue
+            if cmd == "HAMIBOUF, Aziz":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCHAAZ0003.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "TMSCHAAZ0003":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCHAAZ0003.split(" ")])
+                print(DECRYPTED)
+                continue
         # Tercian Database Import
             if cmd == "JORVASKI, Michel":
                 DECRYPTED = "".join([chr(int(binary, 2)) for binary in RFTDJOMI0001.split(" ")])
