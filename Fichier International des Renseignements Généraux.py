@@ -1,11 +1,11 @@
 # Initialization
 import webbrowser
 import sys
-from db import *
+from dbfirg import *
 print("˜*•. ˜”*°•.˜”* °••°*”˜.•°*”˜˜*•. ˜”*°•.˜”")
-print("     CITIZENSHIPS INTERNATIONAL FILE     ")
+print("FICHIER INTL. DES RENSEIGNEMENTS GÉNÉRAUX")
 print("    International League of Diplomacy    ")
-print("      Low Habilitation Mode, 1.1.0       ")
+print("        Restricted Access, 2.1.0         ")
 print("˜*•. ˜”*°•.˜”* °••°*”˜.•°*”˜˜*•. ˜”*°•.˜”")
 print("\n\n(c) August 2020 Polemarch Corporation. All rights reserved.\n\nPlease enter START to get starting.\n\n")
 init = input()
@@ -23,7 +23,7 @@ if init == "START":
         while True:
             cmd = input()
             if cmd == "HELP":
-                print("SEARCH : Research somebody in the international database.\nLEGEND : Get the legend of citizenships files.\nSTATS : Get the citizenships statistics.\nDATABASES : Get the list of other official databases.\nVERSION : See the current version and update notes.\nWEBSITE : Get League's official link.")
+                print("SEARCH : Research somebody in the international database.\nLEGEND : Get the legend of citizenships files.\nSTATS : Get the citizenships statistics.\nDATABASES : Get the list of other official databases.\nCLASSIFIED : Access to classified informations with a special habilitation.\nVERSION : See the current version and update notes.\nWEBSITE : Get League's official link.")
                 continue
             if cmd == "SEARCH":
                 print("Start searching a matching input like the example or with a identity international number.\nEx. DUPONT, Auguste or TMSCDUAU0001.")
@@ -32,17 +32,24 @@ if init == "START":
                 print("(1) INTERNATIONAL IDENTIFICATION NUMBER\n(2) FIRST NAME, NAME\n(3) NATIONALITIES, CLASS\n\n(4) BIRTH YEAR, BIRTH LOCATION -\n(5) GENDER, TALL\n(6) DOMICILIATION\n\n(7) CRIMINAL RECORDS\n(8) SPECIAL NOTES\n\n(*) COULD BE FOUND\n(7) DIPLOMATIC IMMUNITY, SECRET DEFENSE HABILITATION REQUIERED IN SPECIAL INTERNATIONAL FILE ACCESS")
                 continue
             if cmd == "STATS":
-                print("TERREMYSTIAN IDENTITIES (6)\nCitizens (2), Diplomates (4)\nTERCIAN IDENTITIES (2)\nCitizens (0), Diplomates (2)\nAQUILEIAN IDENTITES (2)\nCitizens (0), Diplomates (2)\nELEFSERIAN IDENTITIES (0)\nCitizens (0), Diplomates (0)")
-                continue
-            if cmd == "DATABASES":
-                print("No databases found. Other databases could be in development.")
+                print("TERREMYSTIAN IDENTITIES (12)\nCitizens (6), Diplomates (6)\nTERCIAN IDENTITIES (2)\nCitizens (0), Diplomates (2)\nAQUILEIAN IDENTITES (2)\nCitizens (0), Diplomates (2)\nELEFSERIAN IDENTITIES (0)\nCitizens (0), Diplomates (0)\nEDRAISIAN IDENTITIES (1)\nCitizens (0), Diplomates (1)")
                 continue
             if cmd == "VERSION":
-                print("Citizenships International File Project [version 1.1.0]\n(c) August 2020 Polemarch Corporation. All rights reserved.\nUpdate notes : Creation of the current program. Functionnalities will arrive.")
+                print("Fichier International des Renseignements Généraux [version 2.1.0]\n(c) August 2020 Polemarch Corporation. All rights reserved.\nUpdate notes : Actualization and finalization of file's and databases's development.")
                 continue
+            if cmd == "CLASSIFIED":
+                print("You're trying to access to classified informations : a special SECRET DEFENSE PASSWORD will be required.\nWARNING. This will break the current program.")
+                key = input()
+                SPECIALKEY = "".join([chr(int(binary, 2)) for binary in SPECIALKEY.split(" ")])
+                if key == SPECIALKEY:
+                    DECRYPTED = "".join([chr(int(binary, 2)) for binary in CLASSIFIED.split(" ")])
+                    print(DECRYPTED)
+                    continue
+                elif key != SPECIALKEY:
+                    sys.exit()
             if cmd == "WEBSITE":
-                print("International League of Diplomacy's website is currently in development.\nRedirection...")
-                webbrowser.open('https://terremystique.wordpress.com')
+                print("International League of Diplomacy's website is currently loading.\nRedirection...")
+                webbrowser.open('https://diplomacyleague.wordpress.com')
                 continue
             if cmd == "EXIT":
                 break
@@ -53,6 +60,14 @@ if init == "START":
                 continue
             if cmd == "TMSDMAQU0001":
                 DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSDMAQU0001.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "DRAGNEEL, Natsu":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSDDRNA0002.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "TMSDDRNA0002":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSDDRNA0002.split(" ")])
                 print(DECRYPTED)
                 continue
             if cmd == "KARENA, Emma":
@@ -77,6 +92,30 @@ if init == "START":
                 continue
             if cmd == "TMSCHAAZ0003":
                 DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCHAAZ0003.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "ELHIJEI, Striff":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCELST0004.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "TMSCELST0004":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCELST0004.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "BANGER, Tim":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCBATI0005.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "TMSCBATI0005":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCBATI0005.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "OLYMPUS, Alexios":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCOLAL0006.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "TMSCOLAL0006":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in TMSCOLAL0006.split(" ")])
                 print(DECRYPTED)
                 continue
         # Tercian Database Import
@@ -111,6 +150,15 @@ if init == "START":
                 continue
             if cmd == "AQMDRONI0002":
                 DECRYPTED = "".join([chr(int(binary, 2)) for binary in AQMDRONI0002.split(" ")])
+                print(DECRYPTED)
+                continue
+        # Edraisian Database Import
+            if cmd == "LAZIC, Erwan":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in EDRDLAER0001.split(" ")])
+                print(DECRYPTED)
+                continue
+            if cmd == "EDRDLAER0001":
+                DECRYPTED = "".join([chr(int(binary, 2)) for binary in EDRDLAER0001.split(" ")])
                 print(DECRYPTED)
                 continue
         # Error 404

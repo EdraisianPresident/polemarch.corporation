@@ -1,8 +1,1 @@
 (c) August 2020 Polemarch Corporation. All rights reserved.
-
-[APPLICATIONS]
-CITIZENSHIPS INTERNATIONAL FILE, International League of Diplomacy, 1.1.0.
-
-[RESTRICTIONS]
-CITIZENSHIPS INTERNATIONAL FILE.py      LOCAL APPLICATION. DO NOT EDIT.
-DB.py                                   DATABASE TO UPDATE REGULARLY. DO NOT EDIT.
